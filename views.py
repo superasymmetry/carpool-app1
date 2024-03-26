@@ -172,3 +172,7 @@ def calendar():
 @views.route("/settings")
 def settings():
    return redirect(url_for("views.editProfile"))
+
+@views.route("/view_calendar")
+def view_calendar():    
+  return render_template("draftc.html")
